@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Blogs | Campus Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html"><img src="https://lms.cdoe.ppsu.ac.in/pluginfile.php/1/theme_academi/footerlogo/1787894228/PPSU%20FEVICON.png" alt="PP Savani University Logo"> Campus<span>Blog</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navLinks">
+      <a href="index.html">Home</a><a href="blogs.html" class="active">Blogs</a><a href="events.html">Events</a>
+      <a href="create.html">Create Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      <button class="theme-btn" id="themeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">CAMPUS STORIES</p>
+      <h1>Explore Our Blogs</h1>
+      <p>Read stories, ideas and experiences shared by students.</p>
+    </section>
+
+    <section class="section">
+      <div class="filter-bar">
+        <input type="search" id="searchInput" placeholder="🔍 Search blogs...">
+        <select id="categoryFilter">
+          <option value="All">All Categories</option>
+          <option>College Life</option><option>Events</option><option>Achievements</option>
+          <option>Study</option><option>Technology</option><option>Sports</option>
+        </select>
+      </div>
+      <div id="allBlogs" class="blog-grid"></div>
+      <p id="noBlogs" class="empty-state" hidden>No blogs found. Try another search or category.</p>
+    </section>
+  </main>
+
+  <footer><div><a class="logo" href="index.html"><img src="https://lms.cdoe.ppsu.ac.in/pluginfile.php/1/theme_academi/footerlogo/1787894228/PPSU%20FEVICON.png" alt="PP Savani University Logo"> Campus<span>Blog</span></a><p>Your campus. Your stories.</p></div><p>© <span id="year"></span> Campus Blog · PP Savani University · Swapnil Dhodi · CSE AIML</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

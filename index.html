@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Blog | PP Savani University | Your Campus. Your Stories.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html"><img src="https://lms.cdoe.ppsu.ac.in/pluginfile.php/1/theme_academi/footerlogo/1787894228/PPSU%20FEVICON.png" alt="PP Savani University Logo"> Campus<span>Blog</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="events.html">Events</a>
+      <a href="create.html">Create Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-btn" id="themeBtn" title="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">PP SAVANI UNIVERSITY · CSE AIML</p>
+        <h1>Your Campus.<br><span>Your Stories.</span></h1>
+        <p>Welcome to the student community blog of PP Savani University. Discover campus experiences, events, achievements, study tips and the stories that make college life memorable.</p>
+        <div class="hero-buttons">
+          <a href="blogs.html" class="btn">Explore Blogs</a>
+          <a href="create.html" class="btn btn-outline">Write a Blog</a>
+        </div>
+      </div>
+      <div class="hero-card"><p class="eyebrow">STUDENT PROJECT</p>
+        <div class="hero-icon">🎓</div>
+        <h3>Campus Life</h3>
+        <p>Learn, connect, create and share your college journey.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Blog Categories</h2>
+        </div>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="blogs.html?category=College Life"><span>🎓</span><h3>College Life</h3><p>Stories & experiences</p></a>
+        <a class="category-card" href="blogs.html?category=Events"><span>🎉</span><h3>Events</h3><p>What's happening on campus</p></a>
+        <a class="category-card" href="blogs.html?category=Achievements"><span>🏆</span><h3>Achievements</h3><p>Celebrate student success</p></a>
+        <a class="category-card" href="blogs.html?category=Study"><span>📚</span><h3>Study</h3><p>Tips for better learning</p></a>
+        <a class="category-card" href="blogs.html?category=Technology"><span>💻</span><h3>Technology</h3><p>Tech & coding</p></a>
+        <a class="category-card" href="blogs.html?category=Sports"><span>⚽</span><h3>Sports</h3><p>Games & campus fitness</p></a>
+      </div>
+    </section>
+
+    <section class="section latest-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FROM THE CAMPUS</p>
+          <h2>Latest Stories</h2>
+        </div>
+        <a href="blogs.html" class="text-link">View all →</a>
+      </div>
+      <div id="latestBlogs" class="blog-grid"></div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <p class="eyebrow">HAVE A STORY?</p>
+        <h2>Turn your campus experience into a story.</h2>
+        <p>Share your ideas, memories, achievements and experiences with your campus community.</p>
+      </div>
+      <a href="create.html" class="btn">Start Writing</a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a class="logo" href="index.html"><img src="https://lms.cdoe.ppsu.ac.in/pluginfile.php/1/theme_academi/footerlogo/1787894228/PPSU%20FEVICON.png" alt="PP Savani University Logo"> Campus<span>Blog</span></a>
+      <p>Your campus. Your stories.</p>
+    </div>
+    <p>© <span id="year"></span> Campus Blog · PP Savani University · Swapnil Dhodi · CSE AIML College Project.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

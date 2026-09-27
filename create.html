@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Blog | Campus Blog</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html"><img src="https://lms.cdoe.ppsu.ac.in/pluginfile.php/1/theme_academi/footerlogo/1787894228/PPSU%20FEVICON.png" alt="PP Savani University Logo"> Campus<span>Blog</span></a><button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="navLinks"><a href="index.html">Home</a><a href="blogs.html">Blogs</a><a href="events.html">Events</a><a href="create.html" class="active">Create Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><button class="theme-btn" id="themeBtn">🌙</button></nav>
+  </header>
+  <main>
+    <section class="page-header"><p class="eyebrow">SHARE YOUR STORY</p><h1>Create a Blog</h1><p>Write something that your campus community will love to read.</p></section>
+    <section class="form-section">
+      <form id="blogForm" class="form-card">
+        <div class="form-row">
+          <div class="field"><label for="title">Blog Title *</label><input id="title" required placeholder="e.g. My First Week at College"></div>
+          <div class="field"><label for="author">Author Name *</label><input id="author" required placeholder="Your name"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="category">Category *</label><select id="category" required><option value="">Select category</option><option>College Life</option><option>Events</option><option>Achievements</option><option>Study</option><option>Technology</option><option>Sports</option></select></div>
+          <div class="field"><label for="image">Cover Photo</label><input id="image" type="file" accept="image/*"><small class="field-help">Choose a JPG, PNG, WEBP or other image from your computer.</small></div>
+        <div class="field">
+          <label>Choose Emoji</label>
+          <input type="hidden" id="emoji" value="📝">
+          <div class="emoji-picker" id="emojiPicker">
+            <button type="button" class="emoji-option selected" data-emoji="📝">📝</button>
+            <button type="button" class="emoji-option" data-emoji="🎓">🎓</button>
+            <button type="button" class="emoji-option" data-emoji="📚">📚</button>
+            <button type="button" class="emoji-option" data-emoji="💻">💻</button>
+            <button type="button" class="emoji-option" data-emoji="🏆">🏆</button>
+            <button type="button" class="emoji-option" data-emoji="🎉">🎉</button>
+            <button type="button" class="emoji-option" data-emoji="❤️">❤️</button>
+            <button type="button" class="emoji-option" data-emoji="🌟">🌟</button>
+            <button type="button" class="emoji-option" data-emoji="📸">📸</button>
+            <button type="button" class="emoji-option" data-emoji="🏫">🏫</button>
+            <button type="button" class="emoji-option" data-emoji="⚽">⚽</button>
+            <button type="button" class="emoji-option" data-emoji="🎵">🎵</button>
+          </div>
+          <small class="field-help">Click an emoji to choose it. If you upload a photo, the photo will be used instead.</small>
+        </div>
+        </div>
+        <div class="image-preview-wrap"><img id="imagePreview" class="image-preview" alt="Selected cover photo preview" hidden></div>
+        <div class="field"><label for="content">Blog Content *</label><textarea id="content" rows="10" required placeholder="Write your campus story here..."></textarea></div>
+        <button class="btn" type="submit">Publish Blog ✨</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+  <footer><div><a class="logo" href="index.html"><img src="https://lms.cdoe.ppsu.ac.in/pluginfile.php/1/theme_academi/footerlogo/1787894228/PPSU%20FEVICON.png" alt="PP Savani University Logo"> Campus<span>Blog</span></a><p>Your campus. Your stories.</p></div><p>© <span id="year"></span> Campus Blog · PP Savani University · Swapnil Dhodi · CSE AIML</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
